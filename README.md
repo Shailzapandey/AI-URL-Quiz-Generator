@@ -1,42 +1,22 @@
-Prerna: Rise Again 🌟 Prerna is a dedicated support system for students who have faced setbacks in competitive exams (NEET, JEE, etc.). Our mission is to provide an empathetic, stigma-free environment where students can recover, reflect, and regain their motivation through professional guidance and peer support.
+# AI URL Quiz Generator
 
-✨ Key Features 🧠 Emotional Well-being Anonymous Counseling: Connect with specialized professionals via text, voice, or video in a 100% confidential environment.
+A full-stack web application that leverages the OpenAI API to dynamically parse web content and generate interactive study materials. Built to transform any URL into stateful quizzes, flashcards, and simplified summaries instantly, while maintaining strict API key security through a backend proxy.
 
-AI Mood Tracker: Monitor emotional patterns with an AI-powered tool that provides personalized insights and coping strategies based on daily check-ins.
+### 🛠️ Tech Stack
+* **Frontend:** JavaScript (ES6+), HTML5, CSS3
+* **Backend:** Node.js, Express.js
+* **Security & Configuration:** Dotenv, CORS
+* **API Integration:** OpenAI API (gpt-3.5-turbo), REST APIs
 
-AI Video Counselor: A simulated session interface with emotion detection to provide real-time feedback (Neutral, Sad, Happy, Anxious, Focused).
+### ⚙️ Core Architecture & Features
+* **Secure Backend Proxy:** Engineered an Express.js server to act as a secure intermediary for OpenAI API requests, ensuring sensitive API keys remain completely isolated from the client-side environment.
+* **LLM Integration via REST:** Built asynchronous communication between the frontend client and Node backend to transmit extracted URL content and return structured JSON data for educational assessments.
+* **Stateful DOM Manipulation:** Parses complex JSON responses to dynamically render interactive UI components (flippable flashcards, real-time quiz validation) with zero-latency updates and no page reloads.
 
-🚀 Career & Education Second Career Explorer: An AI-powered search tool to discover alternative paths like Data Science, UI/UX Design, and Digital Marketing that align with existing strengths.
+### 🚀 Local Installation & Setup
 
-Scholarship & Course Finder: A curated database of opportunities, including the "Second Chance Scholarship," specifically for students seeking new educational routes.
-
-📈 Productivity & Community Focus Mode: A built-in Pomodoro-style timer (25-minute sessions) with a distraction-blocking overlay to help students rebuild study habits.
-
-Peer Support Community: Access to success stories, discussion forums, and mentorship programs from individuals who successfully navigated similar transitions.
-
-🛠️ Technical Stack Frontend: HTML5, CSS3 (Custom variables, Responsive Design)
-
-Framework: Bootstrap 5.3.0 (Grid, Modals, Tabs, Forms)
-
-Logic: Vanilla JavaScript (ES6+)
-
-Icons: Font Awesome 6.4.0
-
-📁 Project Structure
-Prerna/ ├── index.html # Main landing page & application UI 
-        ├── css/ 
-           │ └── style.css # Custom styling with Dark Mode & Accessibility support 
-        ├── js/ 
-           │ └── script.js # Core logic: Mood tracking, AI Chat, Career search 
-        ├── images/ # Application assets & user-support illustrations 
-
-Open index.html in any modern web browser.
-
-No build step required—runs entirely on the client side.
-
-🤝 Contributing We welcome contributions that enhance the AI recommendation logic or expand the resource library for students.
-
-Next Steps: Implementation of persistent local storage for mood tracking and integration with real emotion-detection APIs.
-
-📄 License © 2023 Prerna. Made with ❤️ for students across India.
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/Shailzapandey/ai-url-quiz-generator.git](https://github.com/Shailzapandey/ai-url-quiz-generator.git)
+   cd ai-url-quiz-generator
 
